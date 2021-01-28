@@ -31,3 +31,9 @@ function whenIRide() {
     </li>
   `);
 }
+function deleteMe() {
+  let thisThing = $('this');
+  console.log('what is this?!', thisThing);
+  $('this').parent().remove();
+
+}
