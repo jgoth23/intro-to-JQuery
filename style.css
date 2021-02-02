@@ -1,0 +1,77 @@
+body > #bg {
+  height: 100%;
+  width: 100%;
+  background-color: #b0c4de;
+  clip-path: polygon(100% 0, 100% 26%, 21% 100%, 0 100%, 0 0);
+  position: absolute;
+  z-index: -1;
+}
+
+@keyframes blink {
+  0% {
+    background: violet;
+  }
+  15% {
+    background: indigo;
+  }
+
+  30% {
+    background: blue;
+  }
+
+  42% {
+    background: green;
+  }
+
+  58% {
+    background: yellow;
+  }
+
+  70% {
+    background: orange;
+  }
+  85% {
+    background: red;
+  }
+  100% {
+    background: violet;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    background: violet;
+  }
+  15% {
+    background: indigo;
+  }
+
+  30% {
+    background: blue;
+  }
+
+  42% {
+    background: green;
+  }
+
+  58% {
+    background: yellow;
+  }
+
+  70% {
+    background: orange;
+  }
+  85% {
+    background: red;
+  }
+  100% {
+    background: violet;
+  }
+}
+
+h1 {
+  height: 100px;
+  width: auto;
+  border: 1px solid black;
+  animation: blink 10s infinite;
+  -webkit-animation: blink 10s infinite;
+}
